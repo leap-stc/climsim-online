@@ -1,0 +1,8 @@
+scratch/**/*
+scratch
+inputdata/**/*
+inputdata
+Dockerfile
+docker_*
+shared_e3sm*
+shared_e3sm/**/*
