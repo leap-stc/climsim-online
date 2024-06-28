@@ -2,6 +2,12 @@
 
 ## Getting started
 
+To evaluate online performance using Google Compute Engine Virtual Machine, [follow these instructions](./cloud_vm.md).
+
+The workflow can also be run on a local linux x86_64 system as well. Instructions for using local resources are in [Local setup](#local-setup)
+
+## Local setup
+
 Clone the repo first
 ```
 git clone ssh://git@gitlab-master.nvidia.com:12051/earth-2/climsim-online.git
