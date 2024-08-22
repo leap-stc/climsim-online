@@ -10,7 +10,7 @@ The workflow can also be run on a local linux x86_64 system as well. Instruction
 
 Clone the repo first
 ```
-git clone ssh://git@gitlab-master.nvidia.com:12051/earth-2/climsim-online.git
+git clone git@github.com:leap-stc/climsim-online.git
 ```
 
 Then update all the submodules
