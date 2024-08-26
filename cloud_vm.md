@@ -19,7 +19,7 @@ Click "Create Instance" and change the following settings from the default:
 - Click "Create"
 - After the instance is created, SSH into the VM instance, and run `docker ps` to verify that the E3SM container is running. If you see only a `gcr.io/gce-containers/konlet` image running, wait for a bit since that container is used to set up the E3SM container. The container is fairly large and pulling it might take some time. You can monitor network traffic by clicking on the triple dot next to your VM in the "VM instance" panel and choose "View monitoring". Once the container is pulled you should see Network Traffic drop.
     - In our test case the download took about 3 minutes.
-- Check `ps docker` again and confirm that the status for `quay.io/akshaysubr/climsim-testing:e3sm-mmf-nn-2024-06-241` is 'Up XXX seconds/minutes'.
+- Check `docker ps` again and confirm that the status for `quay.io/akshaysubr/climsim-testing:e3sm-mmf-nn-2024-06-241` is 'Up XXX seconds/minutes'.
 
 > If you still do not see the container running, check for errors with `sudo journalctl -u konlet-startup`
 
@@ -31,6 +31,8 @@ Click "Create Instance" and change the following settings from the default:
     - `cd E3SM`
     - `git config --global url.https://github.com/.insteadOf git@github.com:`
     - `git submodule update --init --recursive`
+
+Note: The `git config --global url.https://github.com/.insteadOf git@github.com:` command is used here to avoid the need for SSH key setup in the container environment by switching submodule URLs to HTTPS. On a local machine with SSH keys properly configured, this command is not necessary.
 
 - Download the E3SM restart files:
     -  running `pip install gdown && gdown --fuzzy https://drive.google.com/file/d/1rH8GIx6r5rurUpzaibH3gbDksv-gViXk/view?usp=share_link`
