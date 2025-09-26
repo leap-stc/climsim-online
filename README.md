@@ -11,7 +11,7 @@ The workflow can also be run on a local linux x86_64 system as well. Instruction
 Below we also provide instructions for launching a control E3SM-MMF simulation workflow and an online hybrid simulation workflow using the provided Docker container. We strongly recommend the users to read the [E3SM-MMF documentation](https://github.com/NVlabs/E3SM/tree/main/climsim_scripts) for more details on the MMF model and its configuration. 
 
 ## Community
-Join our [Discord server](https://discord.gg/Y8Ww6bZj) to connect with other users, ask questions, and share ideas.
+Join our [Discord server](https://discord.gg/RNWv6qHmfg) to connect with other users, ask questions, and share ideas.
 
 ## Local setup
 
